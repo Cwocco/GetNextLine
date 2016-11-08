@@ -13,57 +13,65 @@
 #include "get_next_line.h"
 
 
-/* Join str without const str */
+/* Join str without const str, on cast avant de free pck sinon ca gueule
+gneu gneu pas content ta use un const aller ntm*/
 
 static char 	*str_join(char *s1, char *s2)
 {
 	char *str;
-	int i;
+	int 	i;
 
 	i = 0;
 	str = NULL;
-	if (s1	 == NULL || s2 == NULL)
-		return (NULL);
-	if (!(str = (char*)malloc(ft_strlen(s1) + ft_strlen(s2) + 1)))
-		return (NULL);
-	while (s1)
+	while (s1[i] && s2[i])
 	{
-		str[i] = s1[i];	
-		i++;
+		if (!(str = (char*)malloc(ft_strlen(s1) + ft_strlen(s2) + 1)))
+			return (NULL);
+		while (s1[i])
+		{
+			str[i] = s1[i];
+			i++;
+		}
+		str[i] = '\0';
+		ft_strcat(str, s2);
+		ft_strdel(s1);
 	}
-	str[i] = '\0';
-	ft_strcat(str, s2);
-	ft_strdel(s1);
 	return (str);
 }
 
  /* Read returns 0 at EoF, -1 if error, 
  strchr returns NULL if character c doesnt appears */
 
-static char *delim_line(char **line, char **linedup, char *str, int fd)
+static char 	*delim_line(char **line, char **linedup, char *str, int fd)
 {
 	int lect;
 
-	*line= ft_strdup(*linedup);
+	*line = ft_strdup(*linedup);
 	// Lets see what we'll type here
-	while ()
+	//while ()
 	if ((lect = read(fd, *linedup, BUFF_SIZE)) < 0)
 		return (-1);
 	if ((str = ft_strchr(*linedup, '\n')) == NULL)
-		return (*line)
-	if ((str = ft_strchr(*linedup, '\n')) != NULL && lect)
+		return (*line);
+	// Do not forget lect read, when \n in str
+	else if ((str = ft_strchr(*linedup, '\n')) != NULL && lect)
 	{
-		*line = str_join(*line, *linedup);
-		ft_strcpy(*line, str + 1);
+
+		while (str)
+		{
+			*line = str_join(*line, *linedup);
+			ft_strcpy(*line, str + 1);
+		}
 	}
-	//Somethings wrong in here
+	//Somethings wrong in here ;
 	else
 	{
 		*line = str_join(*line, *linedup);
 		*linedup[0] = 0;
 	}
 	//Changes needed here
-	return (*line);
+	if (*line )
+	//return (*line);
 }
 
 /* Returns 1 if read, 0 if read end, -1 if read error */
