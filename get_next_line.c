@@ -11,15 +11,16 @@
 /* ************************************************************************** */
 
 #include "get_next_line.h"
+#include "libft/libft.h"
+#include <stdlib.h>
+#include <unistd.h>
 
-
-/* Join str without const str, on cast avant de free pck sinon ca gueule
-gneu gneu pas content ta use un const aller ntm*/
+/* Join str without const str, strdel pour la suite */
 
 static char 	*str_join(char *s1, char *s2)
 {
 	char *str;
-	int 	i;
+	int		i;
 
 	i = 0;
 	str = NULL;
@@ -27,51 +28,11 @@ static char 	*str_join(char *s1, char *s2)
 	{
 		if (!(str = (char*)malloc(ft_strlen(s1) + ft_strlen(s2) + 1)))
 			return (NULL);
-		while (s1[i])
-		{
-			str[i] = s1[i];
-			i++;
-		}
-		str[i] = '\0';
+		ft_strcpy(str, s1);
 		ft_strcat(str, s2);
-		ft_strdel(s1);
+		//ft_strdel(&s1);
 	}
 	return (str);
-}
-
- /* Read returns 0 at EoF, -1 if error, 
- strchr returns NULL if character c doesnt appears */
-
-static char 	*delim_line(char **line, char **linedup, char *str, int fd)
-{
-	int lect;
-
-	*line = ft_strdup(*linedup);
-	// Lets see what we'll type here
-	//while ()
-	if ((lect = read(fd, *linedup, BUFF_SIZE)) < 0)
-		return (-1);
-	if ((str = ft_strchr(*linedup, '\n')) == NULL)
-		return (*line);
-	// Do not forget lect read, when \n in str
-	else if ((str = ft_strchr(*linedup, '\n')) != NULL && lect)
-	{
-
-		while (str)
-		{
-			*line = str_join(*line, *linedup);
-			ft_strcpy(*line, str + 1);
-		}
-	}
-	//Somethings wrong in here ;
-	else
-	{
-		*line = str_join(*line, *linedup);
-		*linedup[0] = 0;
-	}
-	//Changes needed here
-	if (*line )
-	//return (*line);
 }
 
 /* Returns 1 if read, 0 if read end, -1 if read error */
@@ -86,7 +47,13 @@ int get_next_line(int const fd, char **line)
 	i = 0;
 	if (!line || fd < 0)
 		return (-1);
-	if (!(s = (char*)malloc(BUFF_SIZE + 1)))
-		return (-1);
 
+}
+
+
+int main(int argc, char **argv)
+{
+  if (argc == 3)
+    join_str(argv[1], argv[2]);
+  return (0); 
 }
