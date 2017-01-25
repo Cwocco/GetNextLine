@@ -36,16 +36,25 @@ static char 	*str_join(char *s1, char *s2)
 }
 
 /* Returns 1 if read, 0 if read end, -1 if read error */
+static int get_newline(int fd, char **line, char **save)
+{
+	*line = ft_strdup(*save);
+
+	
+}
+
+
+
+
 
 int get_next_line(int const fd, char **line)
 {
-	static char *s;
+	static char *save;
 	int	ret;
 	int i;
-	char buf[BUFF_SIZE + 1];
 
 	i = 0;
-	if (!line || fd < 0)
+	if (!line || fd < 0 || BUFF_SIZE < 1)
 		return (-1);
 
 }
