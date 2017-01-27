@@ -30,26 +30,43 @@ static char 	*str_join(char *s1, char *s2)
 			return (NULL);
 		ft_strcpy(str, s1);
 		ft_strcat(str, s2);
-		//ft_strdel(&s1);
+		ft_strdel(&s1);
 	}
 	return (str);
+}
+
+
+int get_newline(int fd, char **line, char **save, char *buf)
+{
+	int 	l_read;
+	char 	*l_pos;
+	char 	*b_pos;
+
+	while (l_read = read(fd, *buf, BUFF_SIZE) > 0)
+	{
+		b_pos = ft_strchr(*buf, (int)'\n');
+		if (b_pos)
+		{
+			*save = ft_strdup(*buf);
+			*line = str_join(*save, *buf);
+			*line = ft_strsub(*line, 0,  l_pos - *line);
+		}
+		str_join(*line, *buf);
+	}
 }
 
 /* Returns 1 if read, 0 if read end, -1 if read error */
 
 int get_next_line(int const fd, char **line)
 {
-	static char *s;
+	static char *save;
 	int	ret;
 	int i;
-	char buf[BUFF_SIZE + 1];
 
 	i = 0;
-	if (!line || fd < 0)
+	if (!line || fd < 0 || BUFF_SIZE < 1)
 		return (-1);
-
 }
-
 
 int main(int argc, char **argv)
 {
