@@ -36,7 +36,7 @@ static char 	*str_join(char *s1, char *s2)
 }
 
 
-int get_newline(int fd, char **line, char **save, char *buf)
+static int get_newline(int fd, char **line, char **save, char *buf)
 {
 	int 	l_read;
 	char 	*l_pos;
@@ -56,16 +56,6 @@ int get_newline(int fd, char **line, char **save, char *buf)
 }
 
 /* Returns 1 if read, 0 if read end, -1 if read error */
-static int get_newline(int fd, char **line, char **save)
-{
-	*line = ft_strdup(*save);
-
-	
-}
-
-
-
-
 
 int get_next_line(int const fd, char **line)
 {
