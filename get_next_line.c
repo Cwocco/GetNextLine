@@ -45,6 +45,7 @@ static int get_newline(int fd, char **line, char **save, char *buf)
 	while (l_read = read(fd, *buf, BUFF_SIZE) > 0)
 	{
 		b_pos = ft_strchr(*buf, (int)'\n');
+		l_pos = ft_strchr(*line, (int)'\n');
 		if (b_pos)
 		{
 			*save = ft_strdup(*buf);
@@ -64,7 +65,10 @@ int get_next_line(int const fd, char **line)
 	int i;
 
 	i = 0;
+	save = ft_strdup(*line);
 	if (!line || fd < 0 || BUFF_SIZE < 1)
+		return (-1);
+	if (!line = (char *)malloc(sizeof(*line)))
 		return (-1);
 }
 
