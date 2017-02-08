@@ -1,29 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ada-cunh <ada-cunh@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ada-cunh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/06 10:47:30 by ada-cunh          #+#    #+#             */
-/*   Updated: 2017/02/08 01:40:08 by ada-cunh         ###   ########.fr       */
+/*   Created: 2016/11/07 23:21:39 by ada-cunh          #+#    #+#             */
+/*   Updated: 2016/11/07 23:21:40 by ada-cunh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 
-char	*ft_strcat(char *s1, const char *s2)
-{
-	int i;
-	int len_dest;
+#ifndef GET_NEXT_LINE_H
+# define GET_NEXT_LINE_H
 
-	i = 0;
-	len_dest = ft_strlen(s1);
-	while (s2[i] != '\0')
-	{
-		s1[len_dest + i] = (char)s2[i];
-		i++;
-	}
-	s1[len_dest + i] = '\0';
-	return (s1);
-}
+# include <string.h>
+# include "../libft/libft.h"
+
+# define BUFF_SIZE 32
+
+
+int	get_next_line(int const fd, char **line);
+
+#endif
