@@ -6,11 +6,11 @@
 /*   By: ada-cunh <ada-cunh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 13:21:02 by ada-cunh          #+#    #+#             */
-/*   Updated: 2015/05/02 08:44:09 by ada-cunh         ###   ########.fr       */
+/*   Updated: 2017/02/10 03:51:33 by ada-cunh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "includes/libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

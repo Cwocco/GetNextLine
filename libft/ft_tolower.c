@@ -6,11 +6,11 @@
 /*   By: ada-cunh <ada-cunh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/09 11:05:39 by ada-cunh          #+#    #+#             */
-/*   Updated: 2015/02/04 11:29:15 by ada-cunh         ###   ########.fr       */
+/*   Updated: 2017/02/10 04:01:53 by ada-cunh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "includes/libft.h"
 
 int	ft_tolower(int c)
 {

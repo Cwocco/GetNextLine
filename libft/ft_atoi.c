@@ -6,11 +6,11 @@
 /*   By: ada-cunh <ada-cunh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/07 11:02:51 by ada-cunh          #+#    #+#             */
-/*   Updated: 2015/10/14 08:37:02 by ada-cunh         ###   ########.fr       */
+/*   Updated: 2017/02/10 03:24:58 by ada-cunh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "includes/libft.h"
 
 int	ft_atoi(const char *str)
 {

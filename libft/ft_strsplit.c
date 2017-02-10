@@ -6,11 +6,11 @@
 /*   By: ada-cunh <ada-cunh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/27 13:36:11 by ada-cunh          #+#    #+#             */
-/*   Updated: 2016/04/14 11:47:30 by ada-cunh         ###   ########.fr       */
+/*   Updated: 2017/02/10 04:00:57 by ada-cunh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "includes/libft.h"
 
 static char		*ft_add_word(char *s, char c, size_t j)
 {

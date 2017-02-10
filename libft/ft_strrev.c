@@ -6,11 +6,11 @@
 /*   By: ada-cunh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/04/15 17:17:32 by ada-cunh          #+#    #+#             */
-/*   Updated: 2016/04/15 17:26:25 by ada-cunh         ###   ########.fr       */
+/*   Updated: 2017/02/10 04:00:48 by ada-cunh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "includes/libft.h"
 
 char	*ft_strrev(const char *s)
 {

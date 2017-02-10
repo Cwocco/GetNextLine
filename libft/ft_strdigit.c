@@ -6,11 +6,11 @@
 /*   By: ada-cunh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/04/15 16:59:21 by ada-cunh          #+#    #+#             */
-/*   Updated: 2016/04/15 17:14:51 by ada-cunh         ###   ########.fr       */
+/*   Updated: 2017/02/10 03:56:11 by ada-cunh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "includes/libft.h"
 
 int		ft_strdigit(const char *s)
 {

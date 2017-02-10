@@ -6,11 +6,11 @@
 /*   By: ada-cunh <ada-cunh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/02/04 09:28:00 by ada-cunh          #+#    #+#             */
-/*   Updated: 2015/02/04 10:48:44 by ada-cunh         ###   ########.fr       */
+/*   Updated: 2017/02/10 03:59:33 by ada-cunh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "includes/libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

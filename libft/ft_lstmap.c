@@ -6,11 +6,11 @@
 /*   By: ada-cunh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/02/19 11:14:50 by ada-cunh          #+#    #+#             */
-/*   Updated: 2016/02/19 11:22:43 by ada-cunh         ###   ########.fr       */
+/*   Updated: 2017/02/10 03:28:17 by ada-cunh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "includes/libft.h"
 
 t_list		*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {

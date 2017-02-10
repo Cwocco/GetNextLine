@@ -6,11 +6,11 @@
 /*   By: ada-cunh <ada-cunh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/07 14:00:02 by ada-cunh          #+#    #+#             */
-/*   Updated: 2015/02/04 11:26:19 by ada-cunh         ###   ########.fr       */
+/*   Updated: 2017/02/10 03:26:20 by ada-cunh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "includes/libft.h"
 
 int	ft_isdigit(int c)
 {

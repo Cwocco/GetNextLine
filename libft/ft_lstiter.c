@@ -6,11 +6,11 @@
 /*   By: ada-cunh <ada-cunh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/30 08:58:53 by ada-cunh          #+#    #+#             */
-/*   Updated: 2014/12/30 09:25:15 by ada-cunh         ###   ########.fr       */
+/*   Updated: 2017/02/10 03:28:07 by ada-cunh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "includes/libft.h"
 
 void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 {

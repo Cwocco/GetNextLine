@@ -6,11 +6,11 @@
 /*   By: ada-cunh <ada-cunh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/15 09:14:42 by ada-cunh          #+#    #+#             */
-/*   Updated: 2016/03/22 10:36:55 by ada-cunh         ###   ########.fr       */
+/*   Updated: 2017/02/10 03:28:26 by ada-cunh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "includes/libft.h"
 
 t_list		*ft_lstnew(void const *content, size_t content_size)
 {

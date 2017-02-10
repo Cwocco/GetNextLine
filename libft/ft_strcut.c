@@ -6,11 +6,11 @@
 /*   By: ada-cunh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/04/15 16:45:02 by ada-cunh          #+#    #+#             */
-/*   Updated: 2016/04/15 17:11:53 by ada-cunh         ###   ########.fr       */
+/*   Updated: 2017/02/10 03:55:54 by ada-cunh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "includes/libft.h"
 
 char	*ft_strcut(const char *s, const char c)
 {

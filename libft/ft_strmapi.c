@@ -6,12 +6,12 @@
 /*   By: ada-cunh <ada-cunh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/13 11:13:10 by ada-cunh          #+#    #+#             */
-/*   Updated: 2016/04/14 11:10:34 by ada-cunh         ###   ########.fr       */
+/*   Updated: 2017/02/10 03:59:15 by ada-cunh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include "libft.h"
+#include "includes/libft.h"
 
 char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 {

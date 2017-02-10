@@ -6,11 +6,11 @@
 /*   By: ada-cunh <ada-cunh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/13 11:14:05 by ada-cunh          #+#    #+#             */
-/*   Updated: 2015/05/02 08:50:01 by ada-cunh         ###   ########.fr       */
+/*   Updated: 2017/02/10 03:57:55 by ada-cunh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "includes/libft.h"
 
 int	ft_strequ(char const *s1, char const *s2)
 {

@@ -6,11 +6,11 @@
 /*   By: ada-cunh <ada-cunh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/07 14:25:51 by ada-cunh          #+#    #+#             */
-/*   Updated: 2015/05/14 14:09:11 by ada-cunh         ###   ########.fr       */
+/*   Updated: 2017/02/10 03:26:05 by ada-cunh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "includes/libft.h"
 
 int	ft_isascii(int c)
 {

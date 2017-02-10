@@ -6,11 +6,11 @@
 /*   By: ada-cunh <ada-cunh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/02/04 11:18:14 by ada-cunh          #+#    #+#             */
-/*   Updated: 2015/10/14 08:40:35 by ada-cunh         ###   ########.fr       */
+/*   Updated: 2017/02/10 03:25:08 by ada-cunh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "includes/libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

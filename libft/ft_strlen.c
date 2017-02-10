@@ -6,11 +6,11 @@
 /*   By: ada-cunh <ada-cunh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 13:14:34 by ada-cunh          #+#    #+#             */
-/*   Updated: 2015/05/14 13:59:42 by ada-cunh         ###   ########.fr       */
+/*   Updated: 2017/02/10 03:58:55 by ada-cunh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "includes/libft.h"
 
 size_t	ft_strlen(const char *s)
 {

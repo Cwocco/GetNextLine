@@ -6,11 +6,11 @@
 /*   By: ada-cunh <ada-cunh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/12 12:42:37 by ada-cunh          #+#    #+#             */
-/*   Updated: 2015/05/02 08:55:58 by ada-cunh         ###   ########.fr       */
+/*   Updated: 2017/02/10 03:58:26 by ada-cunh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "includes/libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {

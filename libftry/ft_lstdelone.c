@@ -1,41 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ada-cunh <ada-cunh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/06 15:05:56 by ada-cunh          #+#    #+#             */
-/*   Updated: 2017/02/09 02:43:31 by ada-cunh         ###   ########.fr       */
+/*   Created: 2014/12/23 08:50:35 by ada-cunh          #+#    #+#             */
+/*   Updated: 2015/05/02 09:52:47 by ada-cunh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+void	ft_lstdelone(t_list **alst, void (*del) (void*, size_t))
 {
-	int i;
-
-	i = 0;
-	while (s[i] != '\0')
+	if (alst && *alst && del)
 	{
-		if (s[i] == (char)c)
-			return ((char*)s + i);
-		i++;
+		(*del)((*alst)->content, (*alst)->content_size);
+		free(*alst);
+		*alst = NULL;
 	}
-	if ((char)c == 0)
-		return ((char *)s + i);
-	return (NULL);
-}
-
-
-int main(void)
-{
-	char *try;
-	char *s;
-	
-//	(void)argc;
-	s = "aaa\nbbb\nccc\nddd";
-	try = ft_strchr(s, (int)'\n');
-	ft_putstr(try);
 }
