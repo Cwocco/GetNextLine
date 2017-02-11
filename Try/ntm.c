@@ -19,10 +19,10 @@ static int	read_and_cut(const int fd, char **save, char **line)
 {
 	int			ret;
 
-	*line = ft_strdup(*save);
+	//*line = ft_strdup(*save);
 	if ((ret = read(fd, *save, BUFF_SIZE)) > 0)
 	{
-		save[0] = '\0';
+		save[ret] = '\0';
 		*line = ft_strjoin(*line, *save);
 		ft_strdel(line);
 		*save = ft_strdup(*line);
@@ -41,7 +41,7 @@ int			get_next_line(const int fd, char **line)
 
 	if (fd < 0 || BUFF_SIZE < 0 || !line)
 		return (-1);
-	if (!(save = (char *)malloc(sizeof(char))))
+	if (!(save = (char *)malloc(sizeof(char) * BUFF_SIZE)))
 		return (-1);
 	while ((s_pos = ft_strchr(save, (int)'\n')) == NULL)
 	{

@@ -6,7 +6,7 @@
 #    By: ada-cunh <ada-cunh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/03/04 11:23:17 by ada-cunh          #+#    #+#              #
-#    Updated: 2017/01/16 13:05:44 by ada-cunh         ###   ########.fr        #
+#    Updated: 2017/02/11 20:46:56 by ada-cunh         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -81,8 +81,6 @@ SRC		=	ft_putnbr.c \
 			ft_lstmap.c \
 			ft_lstrev.c \
 			ft_iseven.c \
-			ft_create_lst_elem.c \
-			ft_add_end_lst.c \
 
 H		=./libft.h
 
