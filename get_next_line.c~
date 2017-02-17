@@ -6,7 +6,7 @@
 /*   By: ada-cunh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/10 22:12:12 by ada-cunh          #+#    #+#             */
-/*   Updated: 2017/02/17 03:42:44 by ada-cunh         ###   ########.fr       */
+/*   Updated: 2017/02/11 21:46:52 by ada-cunh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ int					get_next_line(int const fd, char **line)
 	static char		*save;
 	int				ret;
 
-	if (fd < 0 || BUFF_SIZE < 1 || !line)
+	if (fd < 0 || fd > 255 || BUFF_SIZE < 1 || !line)
 		return (-1);
 	if (save && cut_save(&save, line))
 		return (1);
